@@ -1,0 +1,46 @@
+## Visual Studio / archivos de solución
+.vs/
+*.user
+*.suo
+*.userosscache
+*.userprefs
+*.sln.docstates
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+*.suo
+*.VC.db
+.vscode/
+
+## Resultados de compilacion
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+*.dll
+*.exe
+*.pdb
+*.ilk
+*.idb
+
+## NuGet
+*.nuget.props
+*.nuget.targets
+packages/
+!packages/build/
+
+## Herramientas
+*.dotsettings
+*.DotSettings.user
+.vs/
+__pycache__/
+
+## Sistema
+Thumbs.db
+Desktop.ini
+.DS_Store
