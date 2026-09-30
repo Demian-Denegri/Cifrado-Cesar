@@ -19,7 +19,7 @@ namespace Cifrador_Cesar
         {
             cifrador.Clave = (int)numericUpDown1.Value;
             cifrador.Mensaje = MensajeACifrar.Text;
-            label1.Text = cifrador.MostrarMensajeCifrado();
+            label1.Text = cifrador.MostrarMensaje();
 
 
         }
@@ -28,7 +28,7 @@ namespace Cifrador_Cesar
         {
             decifrador.Clave = (int)numericUpDown1.Value;
             decifrador.Mensaje = textBoxDescifar.Text;
-            labelTextoDecifrado.Text = decifrador.MostrarMensajeDecifrado();
+            labelTextoDecifrado.Text = decifrador.MostrarMensaje();
 
         }
     }

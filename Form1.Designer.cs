@@ -54,14 +54,15 @@
             // 
             titulo1.AutoSize = true;
             titulo1.Font = new Font("Segoe UI", 20F);
-            titulo1.Location = new Point(71, 115);
+            titulo1.Location = new Point(83, 115);
             titulo1.Name = "titulo1";
-            titulo1.Size = new Size(173, 37);
+            titulo1.Size = new Size(186, 37);
             titulo1.TabIndex = 1;
-            titulo1.Text = "Texto Cifrado";
+            titulo1.Text = "Texto Cifrado: ";
             // 
             // MensajeACifrar
             // 
+            MensajeACifrar.BorderStyle = BorderStyle.FixedSingle;
             MensajeACifrar.Location = new Point(83, 74);
             MensajeACifrar.Name = "MensajeACifrar";
             MensajeACifrar.Size = new Size(161, 23);
@@ -70,11 +71,13 @@
             // 
             // buttonCifrar
             // 
+            buttonCifrar.BackgroundImageLayout = ImageLayout.Center;
+            buttonCifrar.Cursor = Cursors.Hand;
             buttonCifrar.Location = new Point(263, 67);
             buttonCifrar.Name = "buttonCifrar";
             buttonCifrar.Size = new Size(110, 35);
             buttonCifrar.TabIndex = 3;
-            buttonCifrar.Text = "Calcular";
+            buttonCifrar.Text = "Cifrar";
             buttonCifrar.UseVisualStyleBackColor = true;
             buttonCifrar.Click += buttonCifrar_Click;
             // 
@@ -100,6 +103,7 @@
             // 
             // textBoxDescifar
             // 
+            textBoxDescifar.BorderStyle = BorderStyle.FixedSingle;
             textBoxDescifar.Location = new Point(83, 262);
             textBoxDescifar.Name = "textBoxDescifar";
             textBoxDescifar.Size = new Size(161, 23);
@@ -108,6 +112,12 @@
             // 
             // buttonDecifrar
             // 
+            buttonDecifrar.Cursor = Cursors.Hand;
+            buttonDecifrar.FlatAppearance.BorderColor = Color.Black;
+            buttonDecifrar.FlatAppearance.BorderSize = 5;
+            buttonDecifrar.FlatAppearance.MouseDownBackColor = Color.FromArgb(0, 64, 0);
+            buttonDecifrar.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 192, 0);
+            buttonDecifrar.FlatStyle = FlatStyle.System;
             buttonDecifrar.Location = new Point(263, 255);
             buttonDecifrar.Name = "buttonDecifrar";
             buttonDecifrar.Size = new Size(110, 35);
@@ -120,11 +130,11 @@
             // 
             tituloDecifrado.AutoSize = true;
             tituloDecifrado.Font = new Font("Segoe UI", 20F);
-            tituloDecifrado.Location = new Point(83, 307);
+            tituloDecifrado.Location = new Point(83, 305);
             tituloDecifrado.Name = "tituloDecifrado";
-            tituloDecifrado.Size = new Size(212, 37);
+            tituloDecifrado.Size = new Size(225, 37);
             tituloDecifrado.TabIndex = 8;
-            tituloDecifrado.Text = "Texto Descifrado";
+            tituloDecifrado.Text = "Texto Descifrado: ";
             // 
             // labelTextoDecifrado
             // 
@@ -139,6 +149,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ButtonShadow;
             ClientSize = new Size(940, 563);
             Controls.Add(labelTextoDecifrado);
             Controls.Add(tituloDecifrado);

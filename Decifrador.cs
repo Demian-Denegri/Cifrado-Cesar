@@ -4,7 +4,7 @@
     {
         private void Descifrar()
         {
-            ProcesarMensaje();
+            ProcesarMensaje();//almaceno el mensaje en chars dentro de una list
             for (int i = 0; i < listaMensaje.Count; i++)
             {
                 for (int j = 0; j < Letras.Length; j++)
@@ -19,7 +19,7 @@
 
             }
         }
-        public string MostrarMensajeDecifrado()
+        public string MostrarMensaje()
         {
 
             Descifrar();
