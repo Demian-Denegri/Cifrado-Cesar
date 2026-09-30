@@ -3,7 +3,7 @@
     public class Cifrador
     {
         public int Clave { get; set; }
-        private string _Mensaje;
+        protected string _Mensaje;
         public string Mensaje
         {
             get 
@@ -19,13 +19,13 @@
                 _Mensaje = value;
             }
         }
-        private char[] Letras = {
+        protected char[] Letras = {
         'A','B','C','D','E','F','G','H','I','J',
         'K','L','M','N','O','P','Q','R','S','T',
         'U','V','W','X','Y','Z',' '
         };
 
-        private List<char> listaMensaje = new List<char>();
+        protected List<char> listaMensaje = new List<char>();
         public void ProcesarMensaje()
         {
             listaMensaje.Clear();

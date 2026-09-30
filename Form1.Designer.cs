@@ -34,6 +34,10 @@
             buttonCifrar = new Button();
             numericUpDown1 = new NumericUpDown();
             titulo2 = new Label();
+            textBoxDescifar = new TextBox();
+            buttonDecifrar = new Button();
+            tituloDecifrado = new Label();
+            labelTextoDecifrado = new Label();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             SuspendLayout();
             // 
@@ -41,7 +45,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20F);
-            label1.Location = new Point(292, 221);
+            label1.Location = new Point(83, 152);
             label1.Name = "label1";
             label1.Size = new Size(0, 37);
             label1.TabIndex = 0;
@@ -50,7 +54,7 @@
             // 
             titulo1.AutoSize = true;
             titulo1.Font = new Font("Segoe UI", 20F);
-            titulo1.Location = new Point(292, 160);
+            titulo1.Location = new Point(71, 115);
             titulo1.Name = "titulo1";
             titulo1.Size = new Size(173, 37);
             titulo1.TabIndex = 1;
@@ -58,7 +62,7 @@
             // 
             // MensajeACifrar
             // 
-            MensajeACifrar.Location = new Point(304, 64);
+            MensajeACifrar.Location = new Point(83, 74);
             MensajeACifrar.Name = "MensajeACifrar";
             MensajeACifrar.Size = new Size(161, 23);
             MensajeACifrar.TabIndex = 2;
@@ -66,7 +70,7 @@
             // 
             // buttonCifrar
             // 
-            buttonCifrar.Location = new Point(322, 106);
+            buttonCifrar.Location = new Point(263, 67);
             buttonCifrar.Name = "buttonCifrar";
             buttonCifrar.Size = new Size(110, 35);
             buttonCifrar.TabIndex = 3;
@@ -77,7 +81,7 @@
             // numericUpDown1
             // 
             numericUpDown1.Font = new Font("Segoe UI", 15F);
-            numericUpDown1.Location = new Point(585, 64);
+            numericUpDown1.Location = new Point(780, 64);
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new Size(120, 34);
             numericUpDown1.TabIndex = 4;
@@ -88,17 +92,58 @@
             // 
             titulo2.AutoSize = true;
             titulo2.Font = new Font("Segoe UI", 20F);
-            titulo2.Location = new Point(494, 9);
+            titulo2.Location = new Point(752, 9);
             titulo2.Name = "titulo2";
             titulo2.Size = new Size(176, 37);
             titulo2.TabIndex = 5;
             titulo2.Text = "Clave Cifrado";
             // 
+            // textBoxDescifar
+            // 
+            textBoxDescifar.Location = new Point(83, 262);
+            textBoxDescifar.Name = "textBoxDescifar";
+            textBoxDescifar.Size = new Size(161, 23);
+            textBoxDescifar.TabIndex = 6;
+            textBoxDescifar.Text = "Texto a Decifrar";
+            // 
+            // buttonDecifrar
+            // 
+            buttonDecifrar.Location = new Point(263, 255);
+            buttonDecifrar.Name = "buttonDecifrar";
+            buttonDecifrar.Size = new Size(110, 35);
+            buttonDecifrar.TabIndex = 7;
+            buttonDecifrar.Text = "Descifarar";
+            buttonDecifrar.UseVisualStyleBackColor = true;
+            buttonDecifrar.Click += buttonDecifrar_Click;
+            // 
+            // tituloDecifrado
+            // 
+            tituloDecifrado.AutoSize = true;
+            tituloDecifrado.Font = new Font("Segoe UI", 20F);
+            tituloDecifrado.Location = new Point(83, 307);
+            tituloDecifrado.Name = "tituloDecifrado";
+            tituloDecifrado.Size = new Size(212, 37);
+            tituloDecifrado.TabIndex = 8;
+            tituloDecifrado.Text = "Texto Descifrado";
+            // 
+            // labelTextoDecifrado
+            // 
+            labelTextoDecifrado.AutoSize = true;
+            labelTextoDecifrado.Font = new Font("Segoe UI", 20F);
+            labelTextoDecifrado.Location = new Point(83, 365);
+            labelTextoDecifrado.Name = "labelTextoDecifrado";
+            labelTextoDecifrado.Size = new Size(0, 37);
+            labelTextoDecifrado.TabIndex = 9;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(940, 563);
+            Controls.Add(labelTextoDecifrado);
+            Controls.Add(tituloDecifrado);
+            Controls.Add(buttonDecifrar);
+            Controls.Add(textBoxDescifar);
             Controls.Add(titulo2);
             Controls.Add(numericUpDown1);
             Controls.Add(buttonCifrar);
@@ -120,5 +165,9 @@
         private Button buttonCifrar;
         private NumericUpDown numericUpDown1;
         private Label titulo2;
+        private TextBox textBoxDescifar;
+        private Button buttonDecifrar;
+        private Label tituloDecifrado;
+        private Label labelTextoDecifrado;
     }
 }
